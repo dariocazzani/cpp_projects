@@ -6,7 +6,9 @@
 ### compile and make tests
         make all
         make test
-        make clean
         
 ### Use the binary
-        ./<project_name>
+        ./<binary_name>
+        
+### Clean up from binaries
+        make clean
