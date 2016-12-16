@@ -3,7 +3,7 @@ DEBUG = -g
 CFLAGS = -std=c++11 -Wall -Wextra -Werror -pedantic $(DEBUG)
 
 
-all: test_print_double clean
+all: test_print_double print_double
 
 print_double : print_double.o
 	$(CXX) -o print_double print_double.o
@@ -21,4 +21,4 @@ test : test_print_double
 	./test_print_double
 
 clean :
-	rm -rf *.o test_print_double
+	rm -rf *.o test_print_double print_double

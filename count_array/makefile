@@ -3,7 +3,7 @@ DEBUG = -g
 CFLAGS = -Wall -Wextra -Werror -pedantic $(DEBUG)
 
 
-all: count count_test clean
+all: count count_test
 
 count : count.o
 	$(CXX) -o count count.o
@@ -21,4 +21,4 @@ test : count_test
 	./count_test
 
 clean :
-	rm -rf *.o count_test
+	rm -rf *.o count_test count
