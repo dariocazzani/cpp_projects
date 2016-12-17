@@ -6,7 +6,7 @@ int squares_required(int num_grains)
 	if (num_grains == 0)
 		return num_grains;
 	else
-		log = log2((double)num_grains);
+		log = log2(num_grains);
 	return floor(log) + 1;
 }
 
