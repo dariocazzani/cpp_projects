@@ -1,4 +1,3 @@
-// g++ -std=c++11 -Wall -Wextra -Werror -pedantic -o chess1 chess1.cpp && ./chess1
 #include <iostream>
 #include "chess.hpp"
 

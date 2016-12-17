@@ -1,4 +1,3 @@
-// g++ -std=c++11 -Wall -Wextra -Werror -pedantic -o chess1_tdd chess1_tdd.cpp && ./chess1_tdd (-s)
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
 #include "../catch.hpp"
 #include "chess.hpp"
