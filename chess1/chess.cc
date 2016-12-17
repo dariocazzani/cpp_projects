@@ -4,9 +4,10 @@
 
 int main()
 {
-    int sum {1};
-    int square {1};
-    int grains_this_square {1};
+    int rice {0};
 
-    std::cout << "square " << square << ", grains this square = " << grains_this_square << ", total = " << sum << "\n";
+    std::cout << "How many grains should we fit? ";
+    std::cin >> rice;
+    std::cout << "To fit " << rice << " grains of rice you need " 
+    		  << squares_required(rice) << " square(s)" << std::endl;
 }

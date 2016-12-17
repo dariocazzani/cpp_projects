@@ -3,7 +3,7 @@
 int squares_required(int num_grains)
 {
 	double log {1.};
-	if (num_grains == 0)
+	if (num_grains <= 0)
 		return num_grains;
 	else
 		log = log2(num_grains);
