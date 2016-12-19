@@ -17,3 +17,18 @@ TEST_CASE( "Median are computed", "[median]" )
     v1.push_back(1);
     REQUIRE(median(v1) == 3.0);
 }
+
+TEST_CASE("Test is_even function", "[even]")
+{
+	auto a = 0;
+	REQUIRE(is_even(a) == true);
+
+	a = 1;
+	REQUIRE(is_even(a) == false);
+
+	a = -1;
+	REQUIRE(is_even(a) == false);
+
+	a = 6;
+	REQUIRE(is_even(a) == true);
+}
