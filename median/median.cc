@@ -12,7 +12,7 @@ int main()
 	std::vector<int> v;
 	v = read_txt(filename);
 	
-    m = median(v);
-    std::cout << "Median is: " << m << std::endl;
-    return 0;
+	m = median(v);
+	std::cout << "Median is: " << m << std::endl;
+	return 0;
 }

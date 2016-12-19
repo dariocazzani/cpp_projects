@@ -14,7 +14,7 @@ median_test.o: median_test.cc
 	$(CXX) $(CFLAGS) -c median_test.cc
 
 median.o : median.cc
-	$(CXX) $(CFLAGS) -c median.cc	
+	$(CXX) $(CFLAGS) -c median.cc   
 
 test : median_test
 	./median_test
