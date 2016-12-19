@@ -1,9 +1,18 @@
 #include "median.hpp"
+#include "read_txt.hpp"
 
-#include <algorithm>
+#include <iostream>
+#include <vector>
+#include <string>
 
-double median(std::vector<int> & v)
+int main()
 {
-    (void) v;
-    return 4;
+	std::string filename {"num_boats.txt"};
+	int m {0};
+	std::vector<int> v;
+	v = read_txt(filename);
+	
+    m = median(v);
+    std::cout << "Median is: " << m << std::endl;
+    return 0;
 }
