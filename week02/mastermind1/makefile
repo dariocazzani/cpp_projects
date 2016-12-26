@@ -10,7 +10,7 @@ mastermind : mastermind.o
 mastermind_test : mastermind_test.o
 	$(CXX) -o mastermind_test mastermind_test.o
 
-mastermind_test.o: mastermind_test.cc 
+mastermind_test.o: mastermind_test.cc
 	$(CXX) $(CFLAGS) -c mastermind_test.cc
 
 mastermind.o : mastermind.cc

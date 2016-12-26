@@ -1,5 +1,6 @@
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
 #include "mastermind.hpp"
+#include "mastermind_utils.hpp"
 #include "../catch.hpp"
 
 TEST_CASE( "Generate code", "[code]" )
@@ -12,4 +13,11 @@ TEST_CASE( "Generate code", "[code]" )
 	REQUIRE(code.size() == code_size);
 	for (size_t i = 0; i < code_size; ++i)
 		REQUIRE(code[i] < num_colors);
+}
+
+TEST_CASE( "Test random integer generator" , "[random int]" )
+{
+	int low {0};
+	int high {10};
+	REQUIRE(low <= random_int(low, high) <= high);
 }

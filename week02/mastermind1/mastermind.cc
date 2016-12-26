@@ -16,9 +16,8 @@ int main()
 	while (guess != code) {
 	    get_user_guess(guess, code_size, num_colors);
 		calculate_response(guess, code, code_size, num_colors);
-	//     show feedback
 		guesses++;	
 	}
-	// you won in x moves
+	std::cout << "Congratulations, you won in " << guesses << " attempts!" << std::endl;
 	return 0;
 }

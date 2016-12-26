@@ -4,6 +4,7 @@
 #include <vector>
 #include <iostream>
 #include <cassert>
+#include "mastermind_utils.hpp"
 
 void generate_code(std::vector<int>& c, const size_t code_size, const int num_colors);
 void get_user_guess(std::vector<int>& g, const size_t code_size, const int num_colors);
@@ -14,9 +15,8 @@ void calculate_response(const std::vector<int>& g,
 
 void generate_code(std::vector<int>& c, const size_t code_size, const int num_colors)
 {
-	c = {1, 2, 3, 4};
-	assert(c.size() == code_size);
-	assert((int)c.size() < num_colors);
+	for (size_t i = 0; i < code_size; ++i)
+		c.push_back(random_int(0, num_colors-1));
 }
 
 void get_user_guess(std::vector<int>& g, const size_t code_size, const int num_colors)
@@ -26,7 +26,7 @@ void get_user_guess(std::vector<int>& g, const size_t code_size, const int num_c
 	int tmp;
 	std::cout << "Please, enter your guess" << std::endl;
 	for (size_t i = 0; i < code_size; ++i) {
-		std::cout << "color " << i << " ";
+		std::cout << "color " << i+1 << " ";
 		std::cin >> tmp;
 		g.push_back(tmp);
 	}
