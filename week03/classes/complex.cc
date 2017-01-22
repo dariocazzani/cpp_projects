@@ -1,15 +1,21 @@
 #include "complex.hpp"
+#include <iostream>
 
 namespace our_complex {
 complex & complex::operator*=(complex z)
 {
-    (void) z;
+	const double tmp_re {re};
+	re = re * z.re - im * z.im;
+	im = tmp_re * z.im + im * z.re;
     return * this;
 }
 
 complex & complex::operator/=(complex z)
 {
-    (void) z;
+	const double denominator {1.0 / (z.re * z.re + z.im * z.im)};
+	const double tmp_re {re};
+    re = (re * z.re + im * z.im) * denominator;
+    im = (im * z.re - tmp_re * z.im) * denominator; 
     return * this;
 }
 
