@@ -1,0 +1,25 @@
+1. Read Chapter 3 "Modularity", section 4.1 "Introduction" to Chapter 4 "Classes", section 4.2 "Concrete Types" and 11.4 "Time" in "A Tour of C++"
+
+2. Some code snippets from these sections are copied in the folder week3/modularity and week3/classes
+=> test out
+
+In the meeting we will focus on the text in the book and relevant examples from the audio/video code,
+but if time permits discuss solutions to the exercises below.
+
+Greatful if you could share code that you create while working with the colloqium, just upload to the relevant week at
+https://cisco.app.box.com/s/2lu8txyao1v8tq72es5dxpeewbsnqqxt
+
+3. Implement
+complex & complex::operator*=(complex z)
+and
+complex & complex::operator/=(complex z)
+in week3/classes/complex.cpp
+
+New problem has been found in
+Bjarne Strostrup "Programming - Principles and Practice Using C++"
+
+4. "Run a small timing experiment to compare the cost of using vector and list. Generate N random int values in the range [0:N).
+As each int is generated, insert it into a vector<int> (which grows by one element each time).
+Keep the vector sorted; that is, a value is inserted after every previous value that is less than or equal to the new value and before every
+previous value that is larger than the new value. Now do the same experiment using a list<int> to hold the ints.
+For which N is the list faster than the vector?"
