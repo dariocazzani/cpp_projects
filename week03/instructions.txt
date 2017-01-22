@@ -7,7 +7,6 @@ In the meeting we will focus on the text in the book and relevant examples from 
 but if time permits discuss solutions to the exercises below.
 
 Greatful if you could share code that you create while working with the colloqium, just upload to the relevant week at
-https://cisco.app.box.com/s/2lu8txyao1v8tq72es5dxpeewbsnqqxt
 
 3. Implement
 complex & complex::operator*=(complex z)
