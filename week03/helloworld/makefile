@@ -7,7 +7,7 @@ all: main
 main : main.o helloworld.o
 	$(CXX) -o main main.o helloworld.o
 
-main.o : main.cc helloworld.h helloworld.cc
+main.o : main.cc helloworld.hpp helloworld.cc
 	$(CXX) $(CFLAGS) -c main.cc helloworld.cc
 
 clean :
